@@ -1,4 +1,5 @@
 #FCFS
+
 Enter no.of request:8
 Enter request sequence:
 95 180 34 119 11 123 62 64
