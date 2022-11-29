@@ -1,5 +1,5 @@
-#OUTPUT
-
+# OUTPUT
+```
 The contents of Input Table : 
 **  	START	2000
 **  	LDA	  FIVE
@@ -31,3 +31,4 @@ CHARZ	2021
 C1	  2022
 
 The length of the code : 23
+```
