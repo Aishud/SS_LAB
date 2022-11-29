@@ -1,0 +1,7 @@
+LDA	03STA	0F
+
+LDCH	53
+
+STCH	57
+
+END	*
