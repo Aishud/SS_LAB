@@ -4,8 +4,8 @@ The contents of Input Table :
 **  	START	2000
 **  	LDA	  FIVE
 **      STA	  ALPHA
-**   LDCH	CHARZ
-**   STCH	C1
+**     LDCH	CHARZ
+**     STCH	C1
 ALPHA	RESW	2
 FIVE	WORD	5
 CHARZ	BYTE	C'Z'
@@ -14,10 +14,10 @@ C1	RESB	1
 
 The contents of Output Table : 
 ** START	2000
-2000	**   LDA 	FIVE
-2003	**   STA	  ALPHA
-2006	**   LDCH	CHARZ
-2009	**   STCH	C1
+2000	**     LDA 	FIVE
+2003	**     STA	ALPHA
+2006	**     LDCH	CHARZ
+2009	**     STCH	C1
 2012	ALPHA	RESW	2
 2018	FIVE	WORD	5
 2021	CHARZ	BYTE	C'Z'
