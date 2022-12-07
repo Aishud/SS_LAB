@@ -1,5 +1,5 @@
 ## SS_LAB__CSL331
-# Lab Cycle
+ Lab Cycle
 ~~~
 
 
