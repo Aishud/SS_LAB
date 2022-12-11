@@ -15,7 +15,7 @@ int main()
 
 void passOne(char label[10],char opcode[10],char operand[10],char code[10],char mnemonic[3])
 {
-	int locctr,start,length;
+	   int locctr,start,length;
         FILE *fp1,*fp2,*fp3,*fp4,*fp5;
         fp1=fopen("input.txt","r");
         fp2=fopen("optab.txt","r");
@@ -42,7 +42,7 @@ void passOne(char label[10],char opcode[10],char operand[10],char code[10],char 
         		fprintf(fp3,"%s\t%d\n",label,locctr);
         	}
         	fscanf(fp2,"%s\t%s",code,mnemonic);
-        	while(strcmp(opcode,"END")!=0)
+        	while(strcmp(code,"END")!=0)
         	{
         		if(strcmp(opcode,code)==0)
         		{
@@ -84,7 +84,7 @@ void passOne(char label[10],char opcode[10],char operand[10],char code[10],char 
 void display()
 {
 	char str;
-	FILE *fp1,*fp2,*fp3;
+	FILE *fp1, *fp2, *fp3;
 	printf("\nThe contents of Input Table:\n\n");
 	fp1=fopen("input.txt","r");
 	str=fgetc(fp1);
@@ -114,41 +114,3 @@ void display()
 	fclose(fp3);
 }
 
-/*
-The content of input table : 
-
-**    START  2000
-**    LDA    FIVE
-**    STA    ALPHA
-**    LDCH   CHARZ
-**    STCH   C1
-ALPHA RESW   2
-FIVE  WORD   5
-CHARZ BYTE   C'Z'
-C1    RESB   1
-**    END    **
-
-
-The content of Output table : 
-
-	**	START	2000
-2000	**	LDA	FIVE
-2003	**	STA	ALPHA
-2006	**	LDCH	CHARZ
-2009	**	STCH	C1
-2012	ALPHA	RESW	2
-2018	FIVE	WORD	5
-2021	CHARZ	BYTE	C'Z'
-2022	C1	RESB	1
-2023	**	END	**
-
-
-The content of Symbol table : 
-
-ALPHA	2012
-FIVE	2018
-CHARZ	2021
-C1	2022
-
-The length of the code : 23
-*/
