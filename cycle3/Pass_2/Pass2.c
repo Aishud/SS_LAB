@@ -42,7 +42,7 @@ int main()
 			fprintf(fp4,"^");
 			for(i=2;i<(actual_len+2);i++)
 			{
-				itoa(operand[i],ad,16);
+				sprintf(ad,"%x",operand[i]);
 				fprintf(fp1,"%s",ad);
 				fprintf(fp4,"%s",ad);
 			}
@@ -51,7 +51,7 @@ int main()
 		else if(strcmp(opcode,"WORD")==0)
 		{
 			len=strlen(operand);
-			itoa(atoi(operand),a,10);
+			sprintf(a,"%d",atoi(operand));
 			fprintf(fp1,"%d\t%s\t%s\t%s\t00000%s\n",address,label,opcode,operand,a);
 			fprintf(fp4,"^00000%s",a);
 		}
