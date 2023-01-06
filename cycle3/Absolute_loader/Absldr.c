@@ -20,7 +20,7 @@ int main()
    fscanf(fp1,"%s%x%x%s",label,&start,&end,input);
    address=start;
   }
-  else if(strcmp(input,"l")==0)
+  else if(strcmp(input,"T")==0)
   {
    l=length;
    ptaddr=addr;
