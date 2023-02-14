@@ -23,11 +23,7 @@ CYCLE -3
 4. Implement an absolute loader
 5. Implement a relocating loader
 
-CYCLE -4&5
-1. Familiarization of 8051 trainer kit
-2. Addition using 8086
-3. Subtraction using 8086
-4. Multiplication using 8086
-5. Division using 8086
+
+
 	
 ~~~
